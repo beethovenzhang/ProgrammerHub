@@ -1,7 +1,7 @@
 import { REGISTER_SUCCESS, REGISTER_FAIL } from '../actions/types';
 
 const initialState = {
-  token: localStorage.get('token'),
+  token: localStorage.getItem('token'),
   isAuthenticated: null,
   loading: true,
   user: null
@@ -14,7 +14,7 @@ export default function(state = initialState, action) {
       localStorage.setItem('token', payload.token);
       return { ...state, ...payload, isAuthenticated: true, loading: false };
     case REGISTER_FAIL:
-      localStorage.remove('itme');
+      localStorage.removeItem('itme');
       return { ...state, token: null, isAuthenticated: false, loading: false };
     default:
       return state;
