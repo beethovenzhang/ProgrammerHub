@@ -33,8 +33,14 @@ export default function(state = initialState, action) {
     case AUTH_ERROR:
     case LOGIN_FAIL:
     case LOG_OUT:
-      localStorage.removeItem('itme');
-      return { ...state, token: null, isAuthenticated: false, loading: false };
+      localStorage.removeItem('token');
+      return {
+        ...state,
+        token: null,
+        isAuthenticated: false,
+        loading: false,
+        user: null
+      };
     default:
       return state;
   }
