@@ -7,7 +7,14 @@ import { logout } from '../../actions/auth';
 const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   // Show different nav bars based on whether user is logged in
   const authLinks = (
+    // only show icon on mobile devices
     <ul>
+      <li>
+        <Link to='/dashboard'>
+          <i className='fas fa-user' />
+          <span className='hide-sm'>Dashboard</span>
+        </Link>
+      </li>
       <li>
         <a onClick={logout} href='#!'>
           <i className='fas fa-sign-out-alt' />{' '}
