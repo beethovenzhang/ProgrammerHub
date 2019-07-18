@@ -37,7 +37,7 @@ export const createProfile = (
       payload: res.data
     });
 
-    dispatch(setAlert(edit ? 'Profile updated' : 'Profile created'));
+    dispatch(setAlert(edit ? 'Profile updated' : 'Profile created', 'success'));
     // redirect in actions is different than that in component
     if (!edit) {
       history.push('/dashboard');
