@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addExperience } from '../../actions/profile';
 import PropTypes from 'prop-types';
-import { set } from 'mongoose';
 
 const AddExperience = ({ addExperience, history }) => {
   const [formData, setFormData] = useState({
@@ -127,4 +126,4 @@ AddExperience.propTypes = {
 export default connect(
   null,
   { addExperience }
-)(AddExperience);
+)(withRouter(AddExperience));
