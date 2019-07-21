@@ -19,7 +19,7 @@ const Experience = ({ experience }) => {
   ));
   return (
     <Fragment>
-      <h2 className='my-2'>Experience Credentials</h2>
+      <h2 className='my-2'>Experience</h2>
       <table className='table'>
         <thead>
           <tr>
