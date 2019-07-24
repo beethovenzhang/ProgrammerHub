@@ -10,6 +10,9 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
     // only show icon on mobile devices
     <ul>
       <li>
+        <Link to='/profiles'>Programmers</Link>
+      </li>
+      <li>
         <Link to='/dashboard'>
           <i className='fas fa-user' />
           <span className='hide-sm'>Dashboard</span>
@@ -27,7 +30,7 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <a href='#!'>Programmers</a>
+        <Link to='/profiles'>Programmers</Link>
       </li>
       <li>
         <Link to='/register'>Register</Link>
