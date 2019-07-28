@@ -48,7 +48,7 @@ export default function(state = initialState, action) {
       return {
         ...state,
         repos: payload,
-        loading: true
+        loading: false
       };
     default: {
       return state;
