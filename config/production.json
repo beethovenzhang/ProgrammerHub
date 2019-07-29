@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://beethovenzhang:715140669@programmerhub-rkuxr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mySecret",
+  "githubClientId": "24171fc75319621de99b",
+  "githubSecret": "e3939c1730d8edab518d2b01ed337118ed45fc18"
+}
