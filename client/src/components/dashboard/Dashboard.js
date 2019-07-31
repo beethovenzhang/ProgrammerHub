@@ -26,7 +26,7 @@ const Dashboard = ({
         <i className='fas fa-user' />
         Welcome {user && user.name}
       </p>
-      {profile !== null ? (
+      {profile !== null && profile.user.name === user.name ? (
         <Fragment>
           <DashboardActions />
           <Experience experience={profile.experience} />
